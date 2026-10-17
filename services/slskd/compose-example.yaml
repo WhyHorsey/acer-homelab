@@ -1,0 +1,19 @@
+services:
+  slskd:
+    image: slskd/slskd:0.26.1
+    container_name: slskd
+    user: "1000:1000"
+    ports:
+      - "5030:5030"
+      - "5031:5031"
+      - "50300:50300"
+    environment:
+      - SLSKD_REMOTE_CONFIGURATION=true
+      - SLSKD_USERNAME=<your-slskd-username>
+      - SLSKD_PASSWORD=<slskd-password>
+      - SLSKD_SLSK_USERNAME=<soulseek-username> # note: if you already configure your soulseek account in slskd.yaml, then it will take priority
+      - SLSKD_SLSK_PASSWORD=<soulseek-password>
+    volumes:
+      - /srv/containers/slskd/app:/app
+      - /srv/media/music:/srv/media/music:ro
+    restart: unless-stopped

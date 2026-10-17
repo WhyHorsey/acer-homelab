@@ -1,0 +1,14 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/bookmarks
+
+- Projects:
+    - Github:
+        - abbr: GH
+          href: https://github.com/WhyHorsey
+
+- Social:
+    - Instagram:
+        - abbr: IG
+          href: https://www.instagram.com/your-instagram/
+

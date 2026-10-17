@@ -1,0 +1,14 @@
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/info-widgets/
+
+- resources:
+    cpu: true
+    memory: true
+    disk: /
+- datetime:
+    text_size: l
+    # 1/23/22, 1:37 PM
+    format:
+      dateStyle: short
+      timeStyle: short
+      hour12: true

@@ -1,0 +1,44 @@
+- Management:
+    - Portainer:
+        icon: /icons/portainer.png
+        href: https://100.x.x.x:9443
+        description: Docker Container
+        siteMonitor: https://100.x.x.x:9443
+- Apps:
+    - Navidrome:
+        icon: /icons/navidrome.png
+        href: http://100.x.x.x:4533
+        description: Music Streaming
+        siteMonitor: http://100.x.x.x:4533
+    - slskd:
+        icon: /icons/slskd.png
+        href: http://100.x.x.x:5030
+        description: Soulseek Client
+        siteMonitor: http://100.x.x.x:5030
+    - Explo:
+        icon: /icons/musicbrainz.png
+        href: http://100.x.x.x:7288
+        description: Music Playlist
+        siteMonitor: http://100.x.x.x:7288
+- 󰨛 System:
+    - Tailscale: # This starts the actual service card
+        icon: /icons/tailscale.png
+        href: https://login.tailscale.com/admin/machines
+        description: Network Status
+        widget:
+          type: tailscale
+          deviceid: <replace-me>
+          key: generate a key here: https://console.tailscale.com/admin/settings/keys 
+          fields: ["hostname", "last_seen", "os", "expires"]
+    - Beszel:
+        icon: beszel
+        href: http://100.x.x.x:8090
+        description: System Monitoring
+        widget:
+          type: beszel
+          url: http://100.x.x.x:8090
+          username: anggaragalang307@gmail.com # email
+          password: <your-beszel-password>
+          systemId: you can find it in here: http://100.x.x.x:8090/system/<this-is-your-systemid> # optional
+          version: 2 # optional, default is 1 
+          fields: ["status", "cpu", "memory", "network"] 

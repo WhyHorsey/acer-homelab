@@ -1,0 +1,12 @@
+[
+  {
+    "id": "custom-example01",
+    "name": "Example Custom Playlist",
+    "source": "listenbrainz",
+    "source_url": "https://listenbrainz.org/playlist/REPLACE-WITH-PLAYLIST-UUID/",
+    "lb_mbid": "REPLACE-WITH-PLAYLIST-UUID",
+    "refresh_days": 0,
+    "color_index": 0,
+    "last_fetched": "2026-01-01T00:00:00Z"
+  }
+]

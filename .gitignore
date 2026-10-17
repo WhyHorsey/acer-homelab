@@ -1,0 +1,52 @@
+# Environment variables and secrets
+.env
+.env.*
+**/.env
+**/.env.*
+!**/.env.example
+
+# Real slskd config may contain credentials
+**/slskd.yml
+**/slskd.yml.bak
+
+# Private keys and certificates
+**/id_ed25519
+**/*.key
+**/*.pem
+**/*.p12
+**/*.pfx
+
+# Persistent application state
+**/data/
+**/data.before-compose/
+**/beszel_data/
+**/beszel_agent_data/
+**/beszel_socket/
+**/backup/
+**/backups/
+
+# Runtime files and downloaded data
+**/logs/
+**/downloads/
+**/incomplete/
+**/cache/
+**/artwork/
+**/plugins/
+
+# Database files
+**/*.db
+**/*.db-*
+**/*.sqlite
+**/*.sqlite-*
+
+# Archives and temporary files
+**/*.tar
+**/*.tar.gz
+**/*.zip
+**/*.bak
+**/*.tmp
+
+# Editor and operating system files
+*~
+.DS_Store
+Thumbs.db
