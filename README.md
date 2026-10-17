@@ -22,38 +22,36 @@ The exact image versions used in the running homelab may change over time. Check
 ## 📋 Repository Structure
 
 ```text
-[   70]  ./
-├── [   72]  docs/
-│   ├── [  50K]  Server Backup 101.md
-│   └── [  47K]  Server Manual.md
-├── [   84]  services/
-│   ├── [   40]  beszel/
-│   │   └── [  936]  compose-example.yaml
-│   ├── [   62]  explo/
-│   │   ├── [    0]  config/
-│   │   ├── [   12]  explo/
-│   │   │   └── [   58]  config/
-│   │   │       └── [  326]  custom-playlists-example.json
-│   │   └── [ 1.2K]  compose-example.yaml
-│   ├── [   52]  homepage/
-│   │   ├── [  156]  config/
-│   │   │   ├── [  297]  bookmarks.yaml
-│   │   │   ├── [  12K]  custom.css
-│   │   │   ├── [    0]  custom.js
-│   │   │   ├── [ 1.6K]  service-example.yaml
-│   │   │   ├── [  546]  settings.yaml
-│   │   │   └── [  288]  widgets.yaml
-│   │   └── [  404]  compose-example.yaml
-│   ├── [   88]  navidrome/
-│   │   ├── [  402]  compose-example.yaml
-│   │   └── [ 1.1K]  remap-custom-playlist.sh*
-│   ├── [   40]  portainer/
-│   │   └── [  239]  compose-example.yaml
-│   └── [   46]  slskd/
-│       ├── [   34]  app/
-│       │   └── [ 9.7K]  slskd-example.yml
-│       └── [  630]  compose-example.yaml
-└── [ 5.3K]  README.md
+├── docs
+│   ├── Server Backup 101.md
+│   └── Server Manual.md
+├── README.md
+└── services
+    ├── beszel
+    │   └── compose-example.yaml
+    ├── explo
+    │   ├── compose-example.yaml
+    │   ├── config
+    │   └── explo
+    │       └── config
+    ├── homepage
+    │   ├── compose-example.yaml
+    │   └── config
+    │       ├── bookmarks.yaml
+    │       ├── custom.css
+    │       ├── custom.js
+    │       ├── service-example.yaml
+    │       ├── settings.yaml
+    │       └── widgets.yaml
+    ├── navidrome
+    │   ├── compose-example.yaml
+    │   └── remap-custom-playlist.sh
+    ├── portainer
+    │   └── compose-example.yaml
+    └── slskd
+        ├── app
+        │   └── slskd-example.yml
+        └── compose-example.yaml
 ```
 
 These are example files, not necessarily ready-to-run deployments. File names or paths may be adjusted as the repository evolves.
